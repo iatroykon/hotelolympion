@@ -1,0 +1,361 @@
+@media (max-width: 81.25em) {
+  .hero {
+    grid-template-columns: 1fr 1.1fr;
+    column-gap: 4rem;
+  }
+  .primary-heading {
+    font-size: 5.2rem;
+    max-width: 40rem;
+  }
+
+  .about-us--content {
+    grid-template-columns: 1fr;
+    padding: 0rem 8rem;
+    column-gap: 0;
+    row-gap: 4rem;
+  }
+
+  .about-us--img {
+    width: 80%;
+  }
+
+  .about-us--text-wrapper {
+    grid-row: 1;
+  }
+
+  .rooms {
+    column-gap: 3rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .section-hero {
+    padding: 8rem 0;
+  }
+
+  .about-us--img {
+    width: 90%;
+  }
+
+  .section-amenities {
+    padding: 6rem 0;
+  }
+
+  .restaurant-text-box {
+    padding: 0 5rem 0 0;
+  }
+
+  .restaurant-box {
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+@media (max-width: 62.37em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-nav-list {
+    gap: 4.4rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 9rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .hero-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .primary-heading {
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+
+  .section-rooms .grid--3--cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hero .description {
+    text-align: center;
+  }
+
+  .margin-6 {
+    margin-bottom: 4.6rem;
+  }
+
+  .margin-4 {
+    margin-bottom: 3.6rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .rooms {
+    column-gap: 3rem;
+    row-gap: 5rem;
+    padding: 0rem 8rem;
+  }
+
+  .rooms-section-title {
+    text-align: center;
+  }
+
+  .rooms-section-description {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .room {
+    max-width: 340px;
+    grid-column: span 2;
+  }
+
+  .room:last-child {
+    grid-column: 2/4;
+  }
+
+  .amenities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .amentity-card {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 52.63em) {
+  /*for mobile nav*/
+
+  .nav-btn {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .mobile-nav.active .nav-btn-close {
+    display: block;
+  }
+
+  .mobile-nav.active .nav-btn-open {
+    display: none;
+  }
+
+  .mobile-nav .main-nav-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.8rem;
+    width: 100%;
+  }
+
+  .mobile-nav .nav-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    background-color: #d2ae51e2;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 950;
+    transform: translateX(100%);
+    transition: transform 0.2s;
+  }
+
+  .mobile-nav.active .nav-wrapper {
+    transform: translateX(0%);
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  /*slide in effects*/
+  .section-hero .slide-in-right {
+    transform: translateY(40px);
+  }
+
+  .section-testimonials .slide-in-left {
+    transform: translateX(-40px);
+  }
+
+  .secondary-heading {
+    font-size: 3.3rem;
+  }
+
+  .hero-img {
+    width: 66%;
+  }
+
+  .restaurant-box {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 9rem;
+  }
+
+  .restaurant-text-box {
+    padding: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .restaurant-img-box {
+    width: 79%;
+    margin: 0 auto;
+  }
+
+  .section-gallery .grid--4--cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-img:last-child {
+    display: none;
+  }
+
+  .section-testimonials .grid--3--cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 45.5em) {
+  .primary-heading {
+    font-size: 4.4rem;
+  }
+
+  .hero-img {
+    width: 75%;
+  }
+
+  .section-rooms .grid--3--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    margin-bottom: 3rem;
+  }
+
+  .rooms-section-description {
+    font-size: 1.8rem;
+  }
+
+  .rooms {
+    column-gap: 0rem;
+    row-gap: 6rem;
+    padding: 0rem 4rem;
+  }
+
+  .room {
+    max-width: 45rem;
+    grid-column: span 1;
+  }
+
+  .room:last-child {
+    grid-column: auto;
+  }
+
+  .rooms-section-description {
+    line-height: 1.8;
+  }
+
+  .amenities {
+    width: 96%;
+    column-gap: 4rem;
+    row-gap: 4rem;
+  }
+
+  .amentity-icon {
+    width: 3.4rem;
+  }
+
+  .amentity-title {
+    font-size: 1.8rem;
+  }
+
+  .section-gallery .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-img:last-child {
+    display: block;
+  }
+
+  .testimonial {
+    padding: 7rem 2.5rem 2rem;
+  }
+}
+
+@media (max-width: 38.875em) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 1.7rem 2.5rem;
+  }
+  .primary-heading {
+    max-width: 30rem;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .description {
+    font-size: 1.8rem;
+  }
+
+  .about-us--content {
+    padding: 0rem;
+    text-align: center;
+  }
+
+  .restaurant-img-box {
+    width: 90%;
+  }
+
+  .room-title {
+    font-size: 2rem;
+  }
+
+  .gallery-imgs {
+    width: 100%;
+  }
+
+  .testimonial-title {
+    font-size: 1.8rem;
+  }
+
+  .footer .grid--3--cols {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+  }
+
+  .footer .col:last-child {
+    grid-column: 2/3;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 33.1em) {
+  .restaurant-img-box {
+    width: 100%;
+  }
+}
